@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <bean id = "testCollection" class = "org.example.dependency_injection_collection.TestCollection">
+
+
+        <property name = "coursesList">
+            <list>
+                <value>JAVA</value>
+                <value>PYTHON</value>
+                <value>MERN</value>
+                <value>DSA</value>
+                <value>DATA ANALYTICS</value>
+                <value>JAVA</value>
+            </list>
+        </property>
+
+        <property name = "coursesSet">
+            <set>
+                <value>JAVA</value>
+                <value>PYTHON</value>
+                <value>MERN</value>
+                <value>DSA</value>
+                <value>DATA ANALYTICS</value>
+                <value>JAVA</value>
+            </set>
+        </property>
+
+        <property name = "coursesMap">
+            <map>
+                <entry key = "1" value = "JAVA"/>
+                <entry key = "2" value = "PYTHON"/>
+                <entry key = "3" value = "DSA"/>
+                <entry key = "4" value = "MERN"/>
+            </map>
+        </property>
+
+    </bean>
+
+</beans>

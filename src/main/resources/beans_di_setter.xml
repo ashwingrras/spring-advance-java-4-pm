@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the EmailService bean -->
+    <bean id="emailService" class="org.example.dependency_injection.setter_getter.EmailService"/>
+
+    <!-- Define the MessageProcessor bean with setter injection -->
+    <bean id="messageProcessor" class="org.example.dependency_injection.setter_getter.MessageProcessor">
+        <property name="messageService" ref="emailService"/>
+    </bean>
+
+    <!-- Definition for textEditor bean -->
+    <bean id = "textEditor" class = "org.example.dependency_injection.setter_getter.TextEditor">
+        <property name = "spellChecker" ref = "spellChecker"/>
+    </bean>
+
+    <!-- Definition for spellChecker bean -->
+    <bean id="spellChecker" class="org.example.dependency_injection.setter_getter.SpellChecker"/>
+
+
+</beans>

@@ -1,0 +1,10 @@
+package org.example.dependency_injection.setter_getter;
+
+import org.example.dependency_injection.MessageService;
+
+public class EmailService implements MessageService {
+    @Override
+    public void sendMessage(String message, String receiver) {
+        System.out.println("Email sent to " + receiver + " with message: " + message);
+    }
+}
