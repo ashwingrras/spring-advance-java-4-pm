@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="service" class="org.example.auto_wire_xml.byName.Service" />
+
+    <bean id="testing" class="org.example.auto_wire_xml.byName.Testing" />
+
+    <bean id="client" class="org.example.auto_wire_xml.byName.Client" autowire="byName" />
+
+
+
+
+
+    <!--<bean id="serviceA" class="org.example.auto_wire_xml.byName.ServiceA" />
+    <bean id="serviceB" class="org.example.auto_wire_xml.byName.ServiceB" />
+    <bean id="clientAB" class="org.example.auto_wire_xml.byName.ClientAB" autowire="byName" />-->
+
+</beans>

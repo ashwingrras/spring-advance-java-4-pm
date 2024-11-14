@@ -15,6 +15,8 @@
         <property name = "school" value = "VIS"/>
     </bean>
 
+
+
     <!-- with parent as abstract, where class not specify only have abstract attribute -->
 
     <!--<bean id = "beanTeamplate" abstract = "true">

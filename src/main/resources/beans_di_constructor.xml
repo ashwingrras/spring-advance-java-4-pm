@@ -3,6 +3,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
     <!-- Define the EmailService bean -->
     <bean id="emailService" class="org.example.dependency_injection.constructor.EmailService"/>
 
@@ -10,6 +11,8 @@
     <bean id="messageProcessor" class="org.example.dependency_injection.constructor.MessageProcessor">
         <constructor-arg ref="emailService"/>
     </bean>
+
+
 
 
     <!-- Definition for textEditor bean -->

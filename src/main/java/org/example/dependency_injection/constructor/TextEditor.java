@@ -4,6 +4,7 @@ public class TextEditor
 {
     private SpellChecker spellChecker;
 
+    // constructor injection
     public TextEditor(SpellChecker spellChecker) {
         System.out.println("Inside TextEditor constructor." );
         this.spellChecker = spellChecker;

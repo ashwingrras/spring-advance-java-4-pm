@@ -14,4 +14,5 @@ public class MessageProcessor
     public void processMessage(String message, String receiver) {
         this.messageService.sendMessage(message, receiver);
     }
+
 }

@@ -8,7 +8,6 @@
 
     <bean id = "testCollection" class = "org.example.dependency_injection_collection.TestCollection">
 
-
         <property name = "coursesList">
             <list>
                 <value>JAVA</value>

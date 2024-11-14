@@ -20,6 +20,9 @@ public class MainWithInheritance
         objB.getSurname();
         objB.getSchool();
 
+
+
+
         // with abstract parent, where not no create parent object
         /*HelloChild objB = (HelloChild) context.getBean("helloChild");
         objB.getName();

@@ -11,10 +11,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
       3. Dependency Injection : ( XML and Annotations )
         3.1 constructor inject
         3.3 setter inject
-      
-      4. AutoWired
+        inheritance
+        dependency injection with collection
+      4. AutoWired : beans / object
+            1. byName: setter name
+            2. byType: Property Type ( class )
+            3. constructor:
+            4. no
       5. AOP ( Aspect Oriented Programming )
-      6. Spring - MVC ( Model View Controller)
+      6. Spring - MVC ( Model View Controller )
         5.1 JSP
       7. Spring - MVC with Data Base ( JDBC / Hibernate )
 

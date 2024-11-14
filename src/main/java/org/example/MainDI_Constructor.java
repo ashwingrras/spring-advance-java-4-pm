@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.dependency_injection.MessageService;
+import org.example.dependency_injection.constructor.EmailService;
 import org.example.dependency_injection.constructor.MessageProcessor;
 import org.example.dependency_injection.constructor.TextEditor;
 import org.springframework.context.ApplicationContext;
@@ -16,12 +18,17 @@ public class MainDI_Constructor
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans_di_constructor.xml");
 
+        // OOPS concept
+        MessageService messageService = new EmailService();
+        MessageProcessor messageProcessor = new MessageProcessor(messageService);
+        messageProcessor.processMessage("hello ashish","ashish");
+
         // Retrieve the MessageProcessor bean
         MessageProcessor processor = (MessageProcessor) context.getBean("messageProcessor");
         processor.processMessage("Hello, Dependency Injection with Constructor", "ashwi@grrassolutions.in");
 
 
-        /*TextEditor te = (TextEditor) context.getBean("textEditor");
-        te.spellCheck();*/
+        TextEditor te = (TextEditor) context.getBean("textEditor");
+        te.spellCheck();
     }
 }
